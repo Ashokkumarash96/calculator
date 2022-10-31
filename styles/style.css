@@ -20,6 +20,9 @@ body {
   margin: 1rem;
   background-color: rgb(230, 234, 234);
   height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .numberContainer {

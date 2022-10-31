@@ -23,36 +23,38 @@
   <body>
     <div class="calcBody">
       <div class="headerContainer">Simple Calculator</div>
-      <div class="displayContainer"></div>
+      <div class="displayContainer" id="result"></div>
       <div class="numberContainer">
         <div class="row-1">
-          <button id="">AC</button>
-          <button id="">Delete</button>
-          <button id="" class="green">=</button>
-          <button id="" class="red">/</button>
+          <button id="clear" onclick="location.reload()" class="button">
+            AC
+          </button>
+          <button id="delete" onclick="remove()" class="button">Delete</button>
+          <button id="equal" onclick="calc()" class="green equal">=</button>
+          <button id="divide" onclick="add('/')" class="red">/</button>
         </div>
         <div class="row-2">
-          <button id="">7</button>
-          <button id="">8</button>
-          <button id="">9</button>
-          <button id="" class="red">*</button>
+          <button id="7" onclick="add('7')">7</button>
+          <button id="8" onclick="add('8')">8</button>
+          <button id="9" onclick="add('9')">9</button>
+          <button id="multiply" onclick="add('*')" class="red">*</button>
         </div>
         <div class="row-3">
-          <button id="">4</button>
-          <button id="" class="orange">5</button>
-          <button id="">6</button>
-          <button id="" class="red">-</button>
+          <button id="4" onclick="add('4')">4</button>
+          <button id="5" onclick="add('5')" class="orange">5</button>
+          <button id="6" onclick="add('6')">6</button>
+          <button id="subtract" onclick="add('-')" class="red">-</button>
+        </div>
+        <div class="row-4">
+          <button id="1" onclick="add('1')">1</button>
+          <button id="2" onclick="add('2')">2</button>
+          <button id="3" onclick="add('3')">3</button>
+          <button id="add" onclick="add('+')" class="red">+</button>
         </div>
         <div class="row-5">
-          <button id="">1</button>
-          <button id="">2</button>
-          <button id="">3</button>
-          <button id="" class="red">+</button>
-        </div>
-        <div class="row-5">
-          <button id="" class="big">0</button>
-          <button id="">.</button>
-          <button id="" class="red">%</button>
+          <button id="0" onclick="add('0')" class="big">0</button>
+          <button id="dot" onclick="add('.')">.</button>
+          <button id="percentile" onclick="add('%')" class="red">%</button>
         </div>
       </div>
     </div>
