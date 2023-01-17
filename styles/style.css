@@ -67,3 +67,47 @@ button:hover {
   cursor: pointer;
   background-color: rgb(171, 171, 231);
 }
+
+@media screen and (max-width: 486px) {
+  button {
+    width: 4rem;
+    height: 2rem;
+    border: solid black 1px;
+  }
+
+  .big {
+    width: 8.2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  button {
+    width: 4rem;
+    height: 2.5rem;
+    border: solid black 1px;
+  }
+
+  .big {
+    width: 8.2rem;
+  }
+
+  .headerContainer {
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  button {
+    width: 4rem;
+    height: 2.5rem;
+    border: solid black 1px;
+  }
+
+  .big {
+    width: 8.2rem;
+  }
+
+  .headerContainer {
+    margin: 8px;
+  }
+}
